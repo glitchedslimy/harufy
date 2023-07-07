@@ -7,6 +7,7 @@
   "dependencies": {},
   "devDependencies": {
     "nx": "16.5.0",
-    "nx-cloud": "latest"
+    "nx-cloud": "latest",
+    "typescript": "^5.1.6"
   }
 }

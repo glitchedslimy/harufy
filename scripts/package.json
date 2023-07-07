@@ -1,0 +1,27 @@
+{
+  "name": "harufy-scripts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Just a few script utilities for harufy.",
+  "main": "./index.js",
+  "bin": {
+    "harufy-scripts": "./index.js"
+  },
+  "keywords": [],
+  "author": "Slimy",
+  "license": "MIT",
+  "dependencies": {
+    "arg": "^5.0.2",
+    "esbuild": "^0.18.11",
+    "kleur": "^4.1.5",
+    "svelte": "^4.0.5",
+    "tar": "^6.1.15"
+  },
+  "devDependencies": {
+    "del": "^7.0.0",
+    "esbuild-plugin-copy": "^2.1.1",
+    "tiny-glob": "^0.2.9",
+    "url": "^0.11.1"
+  }
+}
