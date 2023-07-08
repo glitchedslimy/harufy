@@ -1,5 +1,5 @@
 {
-  "name": "harufy",
+  "name": "@harufy/cli",
   "version": "0.1.0",
   "description": "Official Harufy CLI tool for creating and managing projects and dev environments.",
   "main": "./harufy.mjs",
@@ -11,14 +11,16 @@
     "harufy": "./harufy.mjs"
   },
   "scripts": {
-    "build": "harufy-scripts build \"src/index.ts\" --bundle && tsc",
-    "dev": "harufy-scripts dev \"src/index.ts\" --bundle"
+    "build": "harufy-scripts build \"src/**\" --bundle && tsc",
+    "dev": "harufy-scripts dev \"src/**\" --bundle"
   },
   "keywords": [],
   "author": "Slimy",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.4.0",
+    "@types/which-pm-runs": "^1.0.0",
+    "arg": "^5.0.2",
     "harufy-scripts": "workspace:*"
   },
   "engines": {
@@ -26,6 +28,9 @@
   },
   "dependencies": {
     "@clack/prompts": "^0.6.3",
-    "log-update": "^5.0.1"
+    "chalk": "^5.3.0",
+    "kleur": "^4.1.5",
+    "log-update": "^5.0.1",
+    "which-pm-runs": "^1.1.0"
   }
 }
